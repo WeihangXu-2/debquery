@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | DebQuery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css">
+  <link rel="icon" type="image/x-icon" href="static/legal_pad.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+<div class="orb-layer">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-brand">
+    <a href="https://debquery.pythonanywhere.com">DebQuery</a>
+  </div>
+  <div class="nav-links">
+    <a href="https://debquery.pythonanywhere.com/rankings" class="nav-link">Competitor Rankings</a>
+    <a href="https://debquery.pythonanywhere.com/tournaments" class="nav-link">Tournament Reviews</a>
+    <a href="https://debquery.pythonanywhere.com/updates" class="nav-link">Updates</a>
+    <a href="https://debquery.pythonanywhere.com/about" class="nav-link">About</a>
+    <a href="https://debquery.pythonanywhere.com/login" class="nav-link">Log In</a>
+    <a href="https://debquery.pythonanywhere.com/register" class="nav-button">Get Started</a>
+  </div>
+  <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+    <span class="bar bar-1"></span>
+    <span class="bar bar-2"></span>
+    <span class="bar bar-3"></span>
+  </button>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-inner">
+    <a href="https://debquery.pythonanywhere.com/rankings" class="mobile-nav-link">Competitor Rankings</a>
+    <a href="https://debquery.pythonanywhere.com/tournaments" class="mobile-nav-link">Tournament Reviews</a>
+    <a href="https://debquery.pythonanywhere.com/updates" class="mobile-nav-link">Updates</a>
+    <a href="https://debquery.pythonanywhere.com/about" class="mobile-nav-link">About</a>
+    <a href="https://debquery.pythonanywhere.com/login" class="mobile-nav-link">Log In</a>
+    <a href="https://debquery.pythonanywhere.com/register" class="mobile-nav-btn">Get Started</a>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner rainbow-card">
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          <span class="dot"></span> Public national forensics archive
+        </div>
+        <h1>Know the field<br>before you <em>enter&nbsp;the&nbsp;room.</em></h1>
+        <p class="hero-text">
+          DebQuery is a public archive built to make debate AND speech more transparent, more accessible,
+          and more informed. Search past entries, tournament appearances, and competitive records
+          across 7,000+ major tournaments — all in one place.
+        </p>
+        <div class="hero-actions">
+          <a href="https://debquery.pythonanywhere.com/register" class="btn btn-primary">Get Started →</a>
+          <a href="https://debquery.pythonanywhere.com/login" class="btn btn-secondary">Log In</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="radar-wrap">
+          <div class="radar-ring"></div>
+          <div class="radar-ring"></div>
+          <div class="radar-ring"></div>
+          <div class="radar-sweep"></div>
+          <div class="radar-center"></div>
+          <div class="radar-blip blip-1"></div>
+          <div class="radar-blip blip-2"></div>
+          <div class="radar-blip blip-3"></div>
+          <div class="radar-blip blip-4"></div>
+          <span class="radar-label l1">Harvard '27</span>
+          <span class="radar-label l2">NSDA '26</span>
+          <span class="radar-label l3">TOC '27</span>
+          <span class="radar-label l4">Barkley '27</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY DEBQUERY comparison -->
+  <div class="comp-section">
+    <div class="comp-eyebrow">Why DebQuery</div>
+    <h2 class="comp-title">Not all forensics tools are built equal.</h2>
+    <p class="comp-sub">See how we stack up against the alternatives.</p>
+    <div class="arena" id="arena">
+      <div class="competitor-slot" id="slot-0">
+        <div class="comp-card">
+          <div class="x-overlay" id="x-0"><div class="x-icon">✕</div></div>
+          <p class="comp-name">Clusion.io</p>
+          <p class="comp-desc">ELO-based rating, debate only</p>
+        </div>
+        <div class="reason-tag" id="reason-0">ELO isn't built for forensics</div>
+      </div>
+      <div class="vs-divider">vs</div>
+      <div class="competitor-slot" id="slot-1" style="transition-delay:0.15s">
+        <div class="comp-card">
+          <div class="x-overlay" id="x-1"><div class="x-icon">✕</div></div>
+          <p class="comp-name">Debate.land</p>
+          <p class="comp-desc">Policy & LD focus, no speech</p>
+        </div>
+        <div class="reason-tag" id="reason-1">Speech events excluded</div>
+      </div>
+      <div class="vs-divider">vs</div>
+      <div class="winner-slot" id="winner">
+        <div class="winner-card">
+          <div class="winner-badge">✓ DebQuery</div>
+          <p class="winner-name">DebQuery</p>
+          <p class="winner-desc">Congress, speech, debate — all in one</p>
+        </div>
+      </div>
+    </div>
+    <div class="advantages" id="advantages">
+      <div class="adv-row"><i data-lucide="trophy" class="adv-icon"></i><span class="adv-text"><strong>Congress + speech events included</strong> — DI, HI, OO, Extemp, and more. Not just debate.</span></div>
+      <div class="adv-row"><i data-lucide="bar-chart-2" class="adv-icon"></i><span class="adv-text"><strong>Co-ranking, not ELO</strong> — our iterative difficulty-weighted system outperforms ELO which was built for chess, not forensics.</span></div>
+      <div class="adv-row"><i data-lucide="star" class="adv-icon"></i><span class="adv-text"><strong>Tournament reviews</strong> — real feedback from competitors and coaches on every event, not just results.</span></div>
+      <div class="adv-row"><i data-lucide="refresh-cw" class="adv-icon"></i><span class="adv-text"><strong>Updated every 2 weeks</strong> — live results from 7,000+ tournaments automatically ingested and ranked.</span></div>
+    </div>
+  </div>
+
+  <!-- TRUSTED -->
+  <div class="trusted-strip">
+    <div class="trusted-strip-label">Used at:</div><br>
+    <div class="trusted-strip-logos">
+      <img src="static/Harvard_University_coat_of_arms.svg" alt="Harvard" class="trust-logo">
+      <img src="static/yale_new.svg.png" alt="Yale" class="trust-logo">
+      <img src="static/princeton_logo.svg" alt="Princeton" class="trust-logo">
+      <img src="static/emory.png" alt="Emory" class="trust-logo">
+      <img src="static/fau.png.webp" alt="Florida Atlantic" class="trust-logo">
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-section">
+    <div class="stat-card"><div class="stat-number" data-target="1500000">0</div><div class="stat-label">Total entries archived</div></div>
+    <div class="stat-card"><div class="stat-number" data-target="7000">0</div><div class="stat-label">Tournaments indexed</div></div>
+    <div class="stat-card"><div class="stat-number" data-target="3">0</div><div class="stat-label">Years of major tournament history</div></div>
+    <div class="stat-card"><div class="stat-number" data-target="2">0</div><div class="stat-label">Weeks per archive update</div></div>
+  </div>
+
+  <!-- NEW FEATURES -->
+  <div class="section-intro">
+    <div class="section-eyebrow">New Features</div>
+    <h2 class="section-title">Two NEW tools built for the circuit.</h2>
+    <p class="section-body">Live chamber analysis for Congress/Speech after pairings are released, and a rebuilt ranking engine to ease your unease.</p>
+  </div>
+
+  <div class="home-features new-features-grid" style="align-items:start;">
+    <div class="home-feature-card" style="display:flex;flex-direction:column;">
+      <div style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:rgba(35,85,245,0.08);color:var(--accent);margin-bottom:14px;width:fit-content;">
+        <span style="width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block;animation:feat-pulse 1.8s ease infinite;"></span>
+        Live tool
+      </div>
+      <h3 style="margin-bottom:8px;">Chamber difficulty analyzer</h3>
+      <p style="margin-bottom:16px;">Upload your Tabroom chamber CSV and instantly see how competitive each room is — ranked by the break cutoff rating, not distorted averages. Works for Congress and all speech events.</p>
+      <div style="background:var(--surface-2);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:16px;">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);margin-bottom:10px;">Sample · 3 breaks per chamber</div>
+        <div style="display:flex;flex-direction:column;gap:5px;">
+          <div style="display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:8px;background:rgba(35,85,245,0.06);border:1px solid rgba(35,85,245,0.15);font-size:12px;">
+            <span style="font-weight:700;color:var(--ink-3);min-width:18px;font-size:11px;">#1</span>
+            <span style="flex:1;font-weight:600;color:var(--ink);">Chamber 4</span>
+            <div style="width:80px;height:5px;background:var(--border);border-radius:3px;overflow:hidden;"><div style="height:100%;width:91%;background:var(--accent);border-radius:3px;"></div></div>
+            <span style="font-weight:700;color:var(--ink);font-size:12px;min-width:30px;text-align:right;">72.4</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:8px;background:var(--surface);border:1px solid var(--border);font-size:12px;">
+            <span style="font-weight:700;color:var(--ink-3);min-width:18px;font-size:11px;">#2</span>
+            <span style="flex:1;font-weight:600;color:var(--ink);">Chamber 1 <span style="font-size:10px;color:var(--accent);margin-left:4px;">★ you · 71%</span></span>
+            <div style="width:80px;height:5px;background:var(--border);border-radius:3px;overflow:hidden;"><div style="height:100%;width:75%;background:var(--accent);border-radius:3px;opacity:.6;"></div></div>
+            <span style="font-weight:700;color:var(--ink);font-size:12px;min-width:30px;text-align:right;">61.8</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:8px;background:var(--surface);border:1px solid var(--border);font-size:12px;">
+            <span style="font-weight:700;color:var(--ink-3);min-width:18px;font-size:11px;">#3</span>
+            <span style="flex:1;font-weight:600;color:var(--ink);">Chamber 7</span>
+            <div style="width:80px;height:5px;background:var(--border);border-radius:3px;overflow:hidden;"><div style="height:100%;width:49%;background:var(--accent);border-radius:3px;opacity:.4;"></div></div>
+            <span style="font-weight:700;color:var(--ink);font-size:12px;min-width:30px;text-align:right;">40.1</span>
+          </div>
+        </div>
+      </div>
+      <a href="https://debquery.pythonanywhere.com/chamber-difficulty" class="btn btn-secondary" style="margin-top:auto;align-self:flex-start;">Try it →</a>
+    </div>
+
+    <div class="home-feature-card" style="display:flex;flex-direction:column;">
+      <div style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:rgba(131,92,246,0.08);color:#7c4dcc;margin-bottom:14px;width:fit-content;">
+        <i data-lucide="trophy" style="width:13px;height:13px;"></i>
+        Rankings
+      </div>
+      <h3 style="margin-bottom:8px;">Rebuilt co-ranking engine</h3>
+      <p style="margin-bottom:16px;">Our iterative co-ranking system now covers Congress and all speech events — with tournament tiers anchored to the real TOC bid list so elite results carry the weight they deserve.</p>
+      <div style="background:var(--surface-2);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:16px;">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);margin-bottom:10px;">Congress · top ranked</div>
+        <p style="font-size:13px;color:var(--ink-3);">Log in to view live rankings →</p>
+      </div>
+      <a href="https://debquery.pythonanywhere.com/rankings" class="btn btn-secondary" style="margin-top:auto;align-self:flex-start;">View all rankings →</a>
+    </div>
+  </div>
+
+  <style>
+  @keyframes feat-pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.4;transform:scale(.7)} }
+  .new-features-grid { grid-template-columns: 1fr 1fr; }
+  @media (max-width: 640px) { .new-features-grid { grid-template-columns: 1fr; } }
+  </style>
+
+  <!-- WHY DEBQUERY features -->
+  <div class="section-intro">
+    <div class="section-eyebrow">Why DebQuery</div>
+    <h2 class="section-title">Built around the tournaments that shape the circuit.</h2>
+    <p class="section-body">Every major event with 200+ competitors from the last 3 years — broad coverage of the most meaningful competitive spaces, in one searchable system updated every 2 weeks.</p>
+  </div>
+
+  <div class="home-features">
+    <div class="home-feature-card">
+      <div class="feature-icon"><i data-lucide="search"></i></div>
+      <h3>Transparent competition data</h3>
+      <p>See who competed where, in what division, and at which tournament — no more guessing about the field you're walking into.</p>
+    </div>
+    <div class="home-feature-card">
+      <div class="feature-icon"><i data-lucide="trending-up"></i></div>
+      <h3>Better preparation for new competitors</h3>
+      <p>New competitors often enter tournaments blind. DebQuery helps them get familiar with the circuit and prepare with more confidence.</p>
+    </div>
+    <div class="home-feature-card">
+      <div class="feature-icon"><i data-lucide="scale"></i></div>
+      <h3>Focused on equality and access</h3>
+      <p>Access to information shouldn't be limited to the most connected programs. We make competitive history searchable for everyone.</p>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="section-intro">
+    <div class="section-eyebrow">Our Services</div>
+    <h2 class="section-title">Two tools built for research, preparation, and competitive insight.</h2>
+    <p class="section-body">DebQuery includes search and ranking tools designed to help users understand both individual competitors and the strength of the tournaments they attend.</p>
+  </div>
+
+  <div class="services-stack">
+    <div class="service-card">
+      <div class="service-text">
+        <div class="service-tag">Service 01</div>
+        <h2>Entry Search</h2>
+        <p>Look up any competitor and instantly view their past tournament history, appearances, and results across the full archive — not one tournament at a time, but everything in one place.</p>
+        <p>Rankings are calculated using a combination of <strong>break rate</strong> and <strong>tournament difficulty</strong>, so a strong finish at a deep, competitive field carries more weight than the same result at a thinner one.</p>
+      </div>
+      <div class="service-visual">
+        <div class="mini-stat"><div class="mini-stat-icon blue"><i data-lucide="trophy"></i></div><div class="mini-stat-text"><div class="mini-stat-label">Break rate</div><div class="mini-stat-val">68.4%</div><div class="bar-row"><div class="bar-track"><div class="bar-fill" style="--w: 68%"></div></div></div></div></div>
+        <div class="mini-stat"><div class="mini-stat-icon green"><i data-lucide="bar-chart-2"></i></div><div class="mini-stat-text"><div class="mini-stat-label">Tournaments entered</div><div class="mini-stat-val">14 events</div><div class="bar-row"><div class="bar-track"><div class="bar-fill" style="--w: 47%"></div></div></div></div></div>
+        <div class="mini-stat"><div class="mini-stat-icon orange"><i data-lucide="star"></i></div><div class="mini-stat-text"><div class="mini-stat-label">DebQuery rating</div><div class="mini-stat-val">94.1</div><div class="bar-row"><div class="bar-track"><div class="bar-fill" style="--w: 94%"></div></div></div></div></div>
+      </div>
+    </div>
+
+    <div class="service-card alt">
+      <div class="service-visual">
+        <div class="mini-stat"><div class="mini-stat-icon pink"><i data-lucide="landmark"></i></div><div class="mini-stat-text"><div class="mini-stat-label">Field strength score</div><div class="mini-stat-val">91 / 100</div><div class="bar-row"><div class="bar-track"><div class="bar-fill" style="--w: 91%"></div></div></div></div></div>
+        <div class="mini-stat"><div class="mini-stat-icon blue"><i data-lucide="users"></i></div><div class="mini-stat-text"><div class="mini-stat-label">Avg. competitor rating</div><div class="mini-stat-val">82.3</div><div class="bar-row"><div class="bar-track"><div class="bar-fill" style="--w: 82%"></div></div></div></div></div>
+        <div class="mini-stat"><div class="mini-stat-icon green"><i data-lucide="map-pin"></i></div><div class="mini-stat-text"><div class="mini-stat-label">Top-100 entrants</div><div class="mini-stat-val">34 competitors</div><div class="bar-row"><div class="bar-track"><div class="bar-fill" style="--w: 55%"></div></div></div></div></div>
+      </div>
+      <div class="service-text">
+        <div class="service-tag">Service 02</div>
+        <h2>Tournament Difficulty</h2>
+        <p>Not all tournaments are equal. A semifinalist finish at one event can be harder than a championship at another, depending entirely on who attended.</p>
+        <p>We calculate difficulty by measuring how often competitors at a given tournament have historically broken at major events. That score then feeds back into competitor rankings — the two services reinforce each other.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MISSION -->
+  <div class="mission-strip">
+    <div class="mission-left">
+      <h2 class="mission-title">Helping forensics become <em>fairer</em>, clearer, and easier to navigate.</h2>
+      <p class="mission-body">Forensics is at its best when students can focus on argumentation and growth rather than guessing who they're up against. DebQuery gives every program the same competitive clarity.</p>
+    </div>
+    <div class="mission-right">
+      <div class="mission-pill"><div class="pill-icon"><i data-lucide="lock-open"></i></div><div class="pill-text">Open competitive history for every program</div></div>
+      <div class="mission-pill"><div class="pill-icon"><i data-lucide="refresh-cw"></i></div><div class="pill-text">Updated every two weeks with new results</div></div>
+      <div class="mission-pill"><div class="pill-icon"><i data-lucide="target"></i></div><div class="pill-text">Rankings that reflect real competitive context</div></div>
+      <div class="mission-pill"><div class="pill-icon"><i data-lucide="globe"></i></div><div class="pill-text">Built for competitors, coaches, and families alike</div></div>
+    </div>
+  </div>
+
+  <!-- FOOTER CTA -->
+  <div class="footer-cta rainbow-card">
+    <h2>Ready to know your field?</h2>
+    <p>Join competitors from Harvard, Yale, Princeton, and more who use DebQuery to prepare smarter.</p>
+    <div class="footer-cta-actions">
+      <a href="https://debquery.pythonanywhere.com/register" class="btn btn-primary">Create Free Account →</a>
+      <a href="https://debquery.pythonanywhere.com/search" class="btn btn-secondary">Explore the Archive</a>
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+<style>
+.feature-icon i, .mini-stat-icon i, .pill-icon i { display: block; width: 1em; height: 1em; }
+.feature-icon i { width: 100%; height: 100%; }
+.mini-stat-icon i { width: 1.1em; height: 1.1em; stroke: currentColor; }
+.pill-icon i { width: 1em; height: 1em; stroke: currentColor; }
+
+/* Hamburger */
+.nav-hamburger { display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:40px;height:40px;border:1.5px solid var(--border-strong);border-radius:11px;background:var(--surface);cursor:pointer;padding:0;flex-shrink:0;transition:border-color 0.2s,box-shadow 0.2s; }
+.nav-hamburger:hover { border-color:var(--accent);box-shadow:0 0 0 3px rgba(35,85,245,0.1); }
+.bar { display:block;width:18px;height:2px;border-radius:999px;background:var(--ink);transition:transform 0.3s cubic-bezier(0.16,1,0.3,1),opacity 0.2s ease,width 0.3s ease;transform-origin:center; }
+.nav-hamburger.open .bar-1 { transform:translateY(7px) rotate(45deg); }
+.nav-hamburger.open .bar-2 { opacity:0;width:0; }
+.nav-hamburger.open .bar-3 { transform:translateY(-7px) rotate(-45deg); }
+
+/* Mobile drawer */
+.mobile-nav { position:fixed;top:64px;left:0;right:0;z-index:199;background:rgba(245,246,250,0.97);backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid var(--border);transform:translateY(-110%);opacity:0;transition:transform 0.35s cubic-bezier(0.16,1,0.3,1),opacity 0.25s ease;pointer-events:none;max-height:calc(100vh - 64px);overflow-y:auto; }
+.mobile-nav.open { transform:translateY(0);opacity:1;pointer-events:auto; }
+.mobile-nav-inner { display:flex;flex-direction:column;padding:20px 6%;gap:4px;position:relative; }
+.mobile-nav-inner::before { content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#ff2d55,#ff9500,#ffcc00,#34c759,#00c7be,#007aff,#af52de,#ff2d55);background-size:300% 100%;animation:rainbow-shift 5s linear infinite; }
+.mobile-nav-link { display:block;padding:13px 14px;border-radius:12px;font-size:1rem;font-weight:600;color:var(--ink-2);text-decoration:none;transition:background 0.15s,color 0.15s; }
+.mobile-nav-link:hover { background:var(--surface-2);color:var(--ink); }
+.mobile-nav-btn { display:block;margin-top:10px;padding:14px;border-radius:14px;background:var(--ink);color:white;font-weight:700;font-size:1rem;text-align:center;text-decoration:none;transition:opacity 0.18s; }
+.mobile-nav-btn:hover { opacity:0.88; }
+@media (max-width: 768px) { .nav-links { display:none; } .nav-hamburger { display:flex; } }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  if (typeof lucide !== "undefined") lucide.createIcons();
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.stat-card, .home-feature-card, .service-card, .mission-strip, .section-intro, .footer-cta').forEach(el => io.observe(el));
+
+  function animateCount(el, target, duration = 1800) {
+    const start = performance.now();
+    function tick(now) {
+      const p = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.floor(eased * target).toLocaleString();
+      if (p < 1) requestAnimationFrame(tick);
+      else el.textContent = target.toLocaleString();
+    }
+    requestAnimationFrame(tick);
+  }
+
+  const statObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const numEl = e.target.querySelector('.stat-number');
+        if (numEl && !numEl.dataset.done) { numEl.dataset.done = '1'; animateCount(numEl, parseInt(numEl.dataset.target, 10) || 0); }
+        statObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.stat-card').forEach(c => statObs.observe(c));
+
+  const barObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.querySelectorAll('.bar-fill').forEach(b => b.classList.add('go')); barObs.unobserve(e.target); } });
+  }, { threshold: 0.2 });
+  document.querySelectorAll('.service-card').forEach(c => barObs.observe(c));
+
+  document.querySelectorAll('.home-feature-card').forEach((c, i) => { c.style.animationDelay = (i * 0.1) + 's'; });
+});
+
+(function() {
+  function delay(ms) { return new Promise(r => setTimeout(r, ms)); }
+  async function runCompAnimation() {
+    await delay(250);
+    document.getElementById('slot-0').classList.add('visible');
+    await delay(200);
+    document.getElementById('slot-1').classList.add('visible');
+    await delay(450);
+    document.getElementById('x-0').classList.add('show');
+    await delay(150);
+    document.getElementById('reason-0').classList.add('show');
+    await delay(250);
+    document.getElementById('x-1').classList.add('show');
+    await delay(150);
+    document.getElementById('reason-1').classList.add('show');
+    await delay(250);
+    document.getElementById('slot-0').classList.add('eliminated');
+    document.getElementById('slot-1').classList.add('eliminated');
+    await delay(200);
+    document.getElementById('winner').classList.add('visible');
+    await delay(250);
+    document.getElementById('advantages').classList.add('visible');
+  }
+  const arena = document.getElementById('arena');
+  if (arena) {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { runCompAnimation(); obs.unobserve(e.target); } });
+    }, { threshold: 0.3 });
+    obs.observe(arena);
+  }
+})();
+
+const hamburger = document.getElementById("navHamburger");
+const mobileNav = document.getElementById("mobileNav");
+hamburger.addEventListener("click", () => {
+  const isOpen = hamburger.classList.toggle("open");
+  mobileNav.classList.toggle("open", isOpen);
+  document.body.style.overflow = isOpen ? "hidden" : "";
+});
+mobileNav.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => { hamburger.classList.remove("open"); mobileNav.classList.remove("open"); document.body.style.overflow = ""; });
+});
+document.addEventListener("click", (e) => {
+  if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) { hamburger.classList.remove("open"); mobileNav.classList.remove("open"); document.body.style.overflow = ""; }
+});
+</script>
+
+</body>
+</html>
