@@ -6,7 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="static/style.css">
-  <link rel="icon" type="image/png" href="//debquery.online/static/legal_pad.png">
+  <link rel="icon" type="image/x-icon" href="static/legal_pad.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
@@ -21,14 +21,15 @@
 <!-- Navbar -->
 <nav class="navbar">
   <div class="nav-brand">
-    <a href="https://debquery.online">DebQuery</a>
+    <a href="https://debquery.pythonanywhere.com">DebQuery</a>
   </div>
   <div class="nav-links">
     <a href="https://debquery.pythonanywhere.com/rankings" class="nav-link">Competitor Rankings</a>
     <a href="https://debquery.pythonanywhere.com/tournaments" class="nav-link">Tournament Reviews</a>
     <a href="https://debquery.pythonanywhere.com/updates" class="nav-link">Updates</a>
     <a href="https://debquery.pythonanywhere.com/about" class="nav-link">About</a>
-    <a href="https://debquery.pythonanywhere.com/portal" class="nav-button">Launch App →</a>
+    <a href="https://debquery.pythonanywhere.com/login" class="nav-link">Log In</a>
+    <a href="https://debquery.pythonanywhere.com/register" class="nav-button">Get Started</a>
   </div>
   <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
     <span class="bar bar-1"></span>
@@ -44,7 +45,8 @@
     <a href="https://debquery.pythonanywhere.com/tournaments" class="mobile-nav-link">Tournament Reviews</a>
     <a href="https://debquery.pythonanywhere.com/updates" class="mobile-nav-link">Updates</a>
     <a href="https://debquery.pythonanywhere.com/about" class="mobile-nav-link">About</a>
-    <a href="https://debquery.pythonanywhere.com/portal" class="mobile-nav-btn">Launch App →</a>
+    <a href="https://debquery.pythonanywhere.com/login" class="mobile-nav-link">Log In</a>
+    <a href="https://debquery.pythonanywhere.com/register" class="mobile-nav-btn">Get Started</a>
   </div>
 </div>
 
@@ -64,7 +66,8 @@
           across 7,000+ major tournaments — all in one place.
         </p>
         <div class="hero-actions">
-          <a href="https://debquery.pythonanywhere.com/portal" class="btn btn-primary">Get Started / Go to Portal →</a>
+          <a href="https://debquery.pythonanywhere.com/register" class="btn btn-primary">Get Started →</a>
+          <a href="https://debquery.pythonanywhere.com/login" class="btn btn-secondary">Log In</a>
         </div>
       </div>
       <div class="hero-visual">
@@ -197,38 +200,7 @@
       <p style="margin-bottom:16px;">Our iterative co-ranking system now covers Congress and all speech events — with tournament tiers anchored to the real TOC bid list so elite results carry the weight they deserve.</p>
       <div style="background:var(--surface-2);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:16px;">
         <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);margin-bottom:10px;">Congress · top ranked</div>
-        <div style="display:flex;flex-direction:column;gap:5px;">
-          <div style="display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:8px;background:var(--surface);border:1px solid var(--border);font-size:12px;">
-            <span style="font-weight:700;color:var(--ink-3);min-width:18px;font-size:11px;">#1</span>
-            <span style="flex:1;font-weight:600;color:var(--ink);">Ishaan Quazi</span>
-            <div style="width:80px;height:5px;background:var(--border);border-radius:3px;overflow:hidden;"><div style="height:100%;width:100%;background:#7c4dcc;border-radius:3px;"></div></div>
-            <span style="font-weight:700;color:var(--ink);font-size:12px;min-width:30px;text-align:right;">17.8</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:8px;background:var(--surface);border:1px solid var(--border);font-size:12px;">
-            <span style="font-weight:700;color:var(--ink-3);min-width:18px;font-size:11px;">#2</span>
-            <span style="flex:1;font-weight:600;color:var(--ink);">Serena Guo</span>
-            <div style="width:80px;height:5px;background:var(--border);border-radius:3px;overflow:hidden;"><div style="height:100%;width:77%;background:#7c4dcc;border-radius:3px;opacity:.85;"></div></div>
-            <span style="font-weight:700;color:var(--ink);font-size:12px;min-width:30px;text-align:right;">13.7</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:8px;background:var(--surface);border:1px solid var(--border);font-size:12px;">
-            <span style="font-weight:700;color:var(--ink-3);min-width:18px;font-size:11px;">#3</span>
-            <span style="flex:1;font-weight:600;color:var(--ink);">Tanmay Rai</span>
-            <div style="width:80px;height:5px;background:var(--border);border-radius:3px;overflow:hidden;"><div style="height:100%;width:76%;background:#7c4dcc;border-radius:3px;opacity:.7;"></div></div>
-            <span style="font-weight:700;color:var(--ink);font-size:12px;min-width:30px;text-align:right;">13.6</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:8px;background:var(--surface);border:1px solid var(--border);font-size:12px;">
-            <span style="font-weight:700;color:var(--ink-3);min-width:18px;font-size:11px;">#4</span>
-            <span style="flex:1;font-weight:600;color:var(--ink);">Bryan Dominguez</span>
-            <div style="width:80px;height:5px;background:var(--border);border-radius:3px;overflow:hidden;"><div style="height:100%;width:70%;background:#7c4dcc;border-radius:3px;opacity:.55;"></div></div>
-            <span style="font-weight:700;color:var(--ink);font-size:12px;min-width:30px;text-align:right;">12.5</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:8px;background:var(--surface);border:1px solid var(--border);font-size:12px;">
-            <span style="font-weight:700;color:var(--ink-3);min-width:18px;font-size:11px;">#5</span>
-            <span style="flex:1;font-weight:600;color:var(--ink);">Amber Lin</span>
-            <div style="width:80px;height:5px;background:var(--border);border-radius:3px;overflow:hidden;"><div style="height:100%;width:67%;background:#7c4dcc;border-radius:3px;opacity:.4;"></div></div>
-            <span style="font-weight:700;color:var(--ink);font-size:12px;min-width:30px;text-align:right;">12.0</span>
-          </div>
-        </div>
+        <p style="font-size:13px;color:var(--ink-3);">Log in to view live rankings →</p>
       </div>
       <a href="https://debquery.pythonanywhere.com/rankings" class="btn btn-secondary" style="margin-top:auto;align-self:flex-start;">View all rankings →</a>
     </div>
@@ -321,8 +293,8 @@
     <h2>Ready to know your field?</h2>
     <p>Join competitors from Harvard, Yale, Princeton, and more who use DebQuery to prepare smarter.</p>
     <div class="footer-cta-actions">
-      <a href="https://debquery.pythonanywhere.com/portal" class="btn btn-primary">Get Started →</a>
-      <a href="https://debquery.pythonanywhere.com/portal" class="btn btn-secondary">Explore the Archive</a>
+      <a href="https://debquery.pythonanywhere.com/register" class="btn btn-primary">Create Free Account →</a>
+      <a href="https://debquery.pythonanywhere.com/search" class="btn btn-secondary">Explore the Archive</a>
     </div>
   </div>
 
@@ -440,6 +412,403 @@ document.addEventListener("click", (e) => {
   if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) { hamburger.classList.remove("open"); mobileNav.classList.remove("open"); document.body.style.overflow = ""; }
 });
 </script>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">DebQuery</span>
+        <p class="footer-tagline">The national forensics archive — built for competitors, coaches, and families.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <div class="footer-col-label">Product</div>
+          <a href="https://debquery.pythonanywhere.com/rankings">Competitor Rankings</a>
+          <a href="https://debquery.pythonanywhere.com/tournaments">Tournament Reviews</a>
+          <a href="https://debquery.pythonanywhere.com/portal">Entry Search</a>
+          <a href="https://debquery.pythonanywhere.com/updates">Updates</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-label">Company</div>
+          <a href="https://debquery.pythonanywhere.com/about">About</a>
+          <a href="https://debquery.pythonanywhere.com/portal">Launch App</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-label">Legal</div>
+          <a href="#" onclick="openModal('privacy'); return false;">Privacy Policy</a>
+          <a href="#" onclick="openModal('terms'); return false;">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 DebQuery. All rights reserved.</span>
+      <span class="footer-legal-links">
+        <a href="#" onclick="openModal('privacy'); return false;">Privacy</a>
+        <span>·</span>
+        <a href="#" onclick="openModal('terms'); return false;">Terms</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- PRIVACY MODAL -->
+  <div class="modal-backdrop" id="modal-backdrop" onclick="closeModal()"></div>
+
+  <div class="modal" id="modal-privacy">
+    <div class="modal-header">
+      <h2>Privacy Policy</h2>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-date">Last updated: June 2026</p>
+
+      <h3>What we collect</h3>
+      <p>When you create an account or log in with Google, we collect your email address and display name. This is used solely to identify your account and personalize your experience.</p>
+
+      <h3>How we use your data</h3>
+      <p>Your email and name are used only for account creation and login. We do not sell, share, or use your personal information for advertising or any third-party purpose.</p>
+
+      <h3>Tournament data</h3>
+      <p>All competitive results shown on DebQuery are sourced from Tabroom.com, which is publicly accessible. We do not create or fabricate any competitive records — we index and present publicly available data.</p>
+
+      <h3>Cookies & sessions</h3>
+      <p>We use session cookies to keep you logged in. These are not used for tracking or advertising.</p>
+
+      <h3>Data deletion</h3>
+      <p>To delete your account and associated data, contact us at <a href="mailto:supergamer7674@gmail.com">supergamer7674@gmail.com</a>. We will remove your account within 7 days.</p>
+
+      <h3>Contact</h3>
+      <p>Questions? Email <a href="mailto:supergamer7674@gmail.com">supergamer7674@gmail.com</a>.</p>
+    </div>
+  </div>
+
+  <!-- TERMS MODAL -->
+  <div class="modal" id="modal-terms">
+    <div class="modal-header">
+      <h2>Terms of Service</h2>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-date">Last updated: June 2026</p>
+
+      <h3>What DebQuery is</h3>
+      <p>DebQuery is a free tool that indexes publicly available forensics tournament data from Tabroom.com. It is built and maintained by students at Durham Academy as an independent project.</p>
+
+      <h3>Use of the service</h3>
+      <p>You may use DebQuery for personal, educational, and competitive preparation purposes. You may not scrape, copy, or redistribute the data in bulk without permission.</p>
+
+      <h3>Data accuracy</h3>
+      <p>Tournament results and rankings are automatically generated from public data. We make no guarantees about the accuracy or completeness of any rankings or results shown. Rankings are experimental and should be interpreted accordingly.</p>
+
+      <h3>No warranty</h3>
+      <p>DebQuery is provided "as is" without warranty of any kind. We are not liable for any decisions made based on information shown on this site.</p>
+
+      <h3>Changes</h3>
+      <p>We may update these terms at any time. Continued use of the service constitutes acceptance of any updated terms.</p>
+
+      <h3>Contact</h3>
+      <p>Questions? Email <a href="mailto:supergamer7674@gmail.com">supergamer7674@gmail.com</a>.</p>
+    </div>
+  </div>
+
+  <style>
+  /* ── Footer ── */
+  .site-footer {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    margin-top: 80px;
+    padding: 60px 6% 0;
+  }
+
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    flex-wrap: wrap;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .footer-brand {
+    max-width: 280px;
+  }
+
+  .footer-logo {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--ink);
+    letter-spacing: -0.03em;
+  }
+
+  .footer-tagline {
+    font-size: 0.88rem;
+    color: var(--ink-3);
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+  }
+
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 120px;
+  }
+
+  .footer-col-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-3);
+    margin-bottom: 4px;
+  }
+
+  .footer-col a {
+    font-size: 0.9rem;
+    color: var(--ink-2);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .footer-col a:hover {
+    color: var(--accent);
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 0.82rem;
+    color: var(--ink-3);
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .footer-legal-links {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .footer-legal-links a {
+    color: var(--ink-3);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .footer-legal-links a:hover {
+    color: var(--accent);
+  }
+
+  /* ── Modal ── */
+  .modal-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+    z-index: 500;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 501;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    width: min(600px, 92vw);
+    max-height: 80vh;
+    overflow: hidden;
+    flex-direction: column;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.18);
+  }
+
+  .modal.open {
+    display: flex;
+  }
+
+  .modal-backdrop.open {
+    display: block;
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 28px 20px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+
+  .modal-header h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  .modal-close {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--ink-3);
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 8px;
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .modal-close:hover {
+    background: var(--surface-2);
+    color: var(--ink);
+  }
+
+  .modal-body {
+    padding: 24px 28px 28px;
+    overflow-y: auto;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--ink-2);
+  }
+
+  .modal-date {
+    font-size: 0.8rem;
+    color: var(--ink-3);
+    margin-bottom: 20px;
+  }
+
+  .modal-body h3 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 20px 0 6px;
+  }
+
+  .modal-body h3:first-of-type {
+    margin-top: 0;
+  }
+
+  .modal-body a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .modal-body a:hover {
+    text-decoration: underline;
+  }
+
+  /* ── Consent banner ── */
+  .consent-banner {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 400;
+    background: var(--ink);
+    color: white;
+    border-radius: 16px;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    max-width: min(680px, 92vw);
+    width: 100%;
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  .consent-banner p {
+    flex: 1;
+    margin: 0;
+    color: rgba(255,255,255,0.85);
+  }
+
+  .consent-banner a {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .consent-banner-actions {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .consent-btn-accept {
+    background: white;
+    color: var(--ink);
+    border: none;
+    border-radius: 10px;
+    padding: 8px 18px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+  }
+
+  .consent-btn-accept:hover { opacity: 0.88; }
+
+  @media (max-width: 600px) {
+    .footer-inner { flex-direction: column; }
+    .footer-links { gap: 28px; }
+    .consent-banner { flex-direction: column; align-items: flex-start; bottom: 0; border-radius: 16px 16px 0 0; }
+  }
+  </style>
+
+  <!-- CONSENT BANNER -->
+  <div class="consent-banner" id="consent-banner">
+    <p>By using DebQuery you agree to our <a href="#" onclick="openModal('terms'); return false;">Terms of Service</a> and <a href="#" onclick="openModal('privacy'); return false;">Privacy Policy</a>. We use session cookies for login only.</p>
+    <div class="consent-banner-actions">
+      <button class="consent-btn-accept" onclick="acceptConsent()">Got it</button>
+    </div>
+  </div>
+
+  <script>
+  // Modal
+  function openModal(type) {
+    document.getElementById('modal-backdrop').classList.add('open');
+    document.getElementById('modal-privacy').classList.remove('open');
+    document.getElementById('modal-terms').classList.remove('open');
+    document.getElementById('modal-' + type).classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    document.getElementById('modal-backdrop').classList.remove('open');
+    document.getElementById('modal-privacy').classList.remove('open');
+    document.getElementById('modal-terms').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  // Consent banner
+  function acceptConsent() {
+    document.getElementById('consent-banner').style.display = 'none';
+    localStorage.setItem('dq_consent', '1');
+  }
+
+  if (localStorage.getItem('dq_consent')) {
+    document.getElementById('consent-banner').style.display = 'none';
+  }
+  </script>
 
 </body>
 </html>
